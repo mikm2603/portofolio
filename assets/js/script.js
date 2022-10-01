@@ -1,10 +1,3 @@
-window.onload = ()=>{
-    let iklan = document.querySelector("pngrndiv");
-    iklan.remove()
-}
-document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-}, false);
 let link = document.getElementById("link");
 let hamburger = document.getElementById("hamburger");
 let navbar = document.getElementById("navbar");
@@ -13,12 +6,24 @@ hamburger.addEventListener("click",()=>{
         link.classList.remove("active");
         navbar.classList.remove("active");
         document.body.style.removeProperty("overflow-y");
+        hamburger.src = "/assets/icons/hamburger.png";
     }else{
         link.classList.add("active");
         navbar.classList.add("active");
         document.body.style.overflowY = "hidden";
+        hamburger.src = "/assets/icons/close.png";
     }
 })
+let linknav = document.querySelectorAll("#link a");
+linknav.forEach(element => {
+    element.addEventListener("click",()=>{
+        link.classList.remove("active");
+        navbar.classList.remove("active");
+        document.body.style.removeProperty("overflow-y");
+        hamburger.src = "/assets/icons/hamburger.png";
+    });
+});
+
 let btnopen = document.getElementById("btnopen");
 let btnclose = document.getElementById("btnclose");
 let opensource = document.getElementById("opensource");
