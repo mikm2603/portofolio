@@ -240,6 +240,13 @@ main section#home .left .wrapper p.greeting {
   }
 }
 
+@media only screen and (max-width: 512px) {
+  main section#home .left .wrapper p.greeting {
+    font-family: plusjakartasansbold;
+    color: #5200ff;
+  }
+}
+
 main section#home .left .wrapper p.name {
   font-size: 35px;
   font-family: plusjakartasansbold;
