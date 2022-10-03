@@ -2,10 +2,12 @@
 @font-face {
     font-family: plusjakartasansbold;
     src: url('/assets/fonts/plusjakartasansbold.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: plusjakartasansreguler;
     src: url('/assets/fonts/plusjakartasansreguler.ttf');
+    font-display: swap;
 }
 $jakartabold : plusjakartasansbold;
 $jakartareguler : plusjakartasansreguler;
@@ -281,7 +283,7 @@ main{
                 }
             }
             p.report{
-                width: inherit;
+                width: 100%;
                 background: #A598F2;
                 color: black;
                 padding: .5cm;
@@ -320,6 +322,8 @@ main{
             @include flexcolumncenter();
             justify-content: flex-end;
             overflow-x: hidden;
+            position: relative;
+            z-index: 9;
             @media only screen and (max-width: 820px) {
                 width: 50%;
             }
@@ -329,7 +333,8 @@ main{
                 
             }
             img.hero{
-                width: 11cm;
+                width: 90%;
+                height: auto;
                 @media only screen and (max-width: 755px) {
                     width: 95%;                    
                 }

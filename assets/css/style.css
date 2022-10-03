@@ -1,13 +1,13 @@
 @font-face {
   font-family: plusjakartasansbold;
   src: url("/assets/fonts/plusjakartasansbold.ttf");
+  font-display: swap;
 }
-
 @font-face {
   font-family: plusjakartasansreguler;
   src: url("/assets/fonts/plusjakartasansreguler.ttf");
+  font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -57,16 +57,14 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: .2cm 1cm;
+  padding: 0.2cm 1cm;
   position: fixed;
-  background-color: #c4bbfc3f;
+  background-color: rgba(196, 187, 252, 0.2470588235);
   z-index: 9999;
 }
-
 nav h1.title {
   font-size: 25px;
 }
-
 nav .link {
   width: 40%;
   display: flex;
@@ -75,7 +73,6 @@ nav .link {
   justify-content: space-between;
   align-items: center;
 }
-
 @media only screen and (max-width: 820px) {
   nav .link {
     width: 100vw;
@@ -92,41 +89,34 @@ nav .link {
     display: none;
   }
 }
-
 nav .link a {
   font-size: 16px;
 }
-
 @media only screen and (max-width: 820px) {
   nav .link a {
     font-size: 18px;
     color: black;
   }
 }
-
 nav .active {
   display: flex !important;
 }
-
 nav a.action {
   color: white;
   border: 2px solid #7C44F3;
   background-color: #7C44F3;
-  letter-spacing: .05em;
-  padding: .3cm .7cm;
+  letter-spacing: 0.05em;
+  padding: 0.3cm 0.7cm;
   border-radius: 5px;
 }
-
 @media only screen and (max-width: 820px) {
   nav a.action {
     display: none;
   }
 }
-
 nav img.hamburger {
   display: none;
 }
-
 @media only screen and (max-width: 820px) {
   nav img.hamburger {
     display: block;
@@ -136,7 +126,6 @@ nav img.hamburger {
 nav.active {
   background-color: white !important;
 }
-
 nav.active h1.title {
   color: black !important;
 }
@@ -148,7 +137,6 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
-
 main section#home {
   width: 100vw;
   display: flex;
@@ -157,7 +145,6 @@ main section#home {
   justify-content: space-between;
   align-items: center;
 }
-
 @media only screen and (max-width: 556px) {
   main section#home {
     display: flex;
@@ -167,18 +154,15 @@ main section#home {
     flex-direction: column-reverse;
   }
 }
-
 main section#home .left {
   width: 70%;
   height: 100vh;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left {
     width: 50%;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left {
     width: 100%;
@@ -189,106 +173,89 @@ main section#home .left {
     align-items: center;
   }
 }
-
 main section#home .left .wrapper {
   margin-top: 4.5cm;
   padding: 1cm;
   padding-left: 3cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .wrapper {
     padding: 0;
-    padding-left: .5cm;
+    padding-left: 0.5cm;
     margin-top: 10cm;
   }
 }
-
 @media only screen and (max-width: 650px) {
   main section#home .left .wrapper {
-    padding-left: .1cm;
+    padding-left: 0.1cm;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left .wrapper {
     margin-top: 1cm;
-    padding-left: .5cm;
+    padding-left: 0.5cm;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#home .left .wrapper {
     margin-top: 1.5cm;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#home .left .wrapper {
-    padding-left: .2cm;
+    padding-left: 0.2cm;
   }
 }
-
 main section#home .left .wrapper p.greeting {
   font-size: 20px;
   color: #7C44F3;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .wrapper p.greeting {
     font-size: 18px;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#home .left .wrapper p.greeting {
     font-family: plusjakartasansbold;
     color: #5200ff;
   }
 }
-
 main section#home .left .wrapper p.name {
   font-size: 35px;
   font-family: plusjakartasansbold;
-  margin-top: .2cm;
+  margin-top: 0.2cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .wrapper p.name {
     font-size: 22px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   main section#home .left .wrapper p.name {
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 617px) {
   main section#home .left .wrapper p.name {
     font-size: 18px;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left .wrapper p.name {
     font-size: 22px;
   }
 }
-
 main section#home .left .wrapper p.desc {
   width: 50%;
   text-align: left;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .wrapper p.desc {
     width: 90%;
     font-size: 14px;
   }
 }
-
 main section#home .left .action {
   width: 45%;
   display: flex;
@@ -298,174 +265,147 @@ main section#home .left .action {
   align-items: center;
   margin-top: 1cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .action {
     width: 82%;
   }
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left .action a {
     font-size: 14px;
   }
 }
-
 @media only screen and (max-width: 755px) {
   main section#home .left .action {
     width: 85%;
   }
 }
-
 @media only screen and (max-width: 722px) {
   main section#home .left .action {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 685px) {
   main section#home .left .action {
     width: 95%;
   }
 }
-
 @media only screen and (max-width: 650px) {
   main section#home .left .action {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 590px) {
   main section#home .left .action {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left .action {
     width: 55%;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#home .left .action {
     width: 60%;
   }
 }
-
 @media only screen and (max-width: 465px) {
   main section#home .left .action {
     width: 65%;
   }
 }
-
 @media only screen and (max-width: 432px) {
   main section#home .left .action {
     width: 70%;
   }
 }
-
 @media only screen and (max-width: 402px) {
   main section#home .left .action {
     width: 75%;
   }
 }
-
 @media only screen and (max-width: 376px) {
   main section#home .left .action {
     width: 80%;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#home .left .action {
     width: 85%;
   }
 }
-
 main section#home .left .action a.download {
   background-color: #7C44F3;
   border-radius: 5px;
-  padding: .3cm .7cm;
+  padding: 0.3cm 0.7cm;
   border: 2px solid #7C44F3;
 }
-
 @media only screen and (max-width: 590px) {
   main section#home .left .action a.download {
-    padding: .2cm .5cm;
+    padding: 0.2cm 0.5cm;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left .action a.download {
-    padding: .3cm .7cm;
+    padding: 0.3cm 0.7cm;
   }
 }
-
 main section#home .left .action a.explore {
-  padding: .3cm 1cm;
+  padding: 0.3cm 1cm;
   border: 2px solid #7C44F3;
   border-radius: 5px;
 }
-
 @media only screen and (max-width: 590px) {
   main section#home .left .action a.explore {
-    padding: .2cm .5cm;
+    padding: 0.2cm 0.5cm;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .left .action a.explore {
-    padding: .3cm .7cm;
+    padding: 0.3cm 0.7cm;
   }
 }
-
 main section#home .left p.report {
-  width: inherit;
+  width: 100%;
   background: #A598F2;
   color: black;
-  padding: .5cm;
+  padding: 0.5cm;
   padding-left: 3cm;
   position: absolute;
   bottom: 0;
   z-index: 1;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .left p.report {
-    padding-left: .5cm;
+    padding-left: 0.5cm;
     font-size: 12px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   main section#home .left p.report {
-    padding: .3cm;
-    padding-left: .2cm;
+    padding: 0.3cm;
+    padding-left: 0.2cm;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#home .left p.report {
-    padding: .5cm;
-    padding-left: .5cm;
+    padding: 0.5cm;
+    padding-left: 0.5cm;
     font-size: 14px;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#home .left p.report {
-    padding: .2cm;
+    padding: 0.2cm;
     font-size: 12px;
   }
 }
-
 main section#home .left p.report span {
   color: black;
   font-family: plusjakartasansbold;
   font-weight: bold;
 }
-
 main section#home .right {
   width: 30%;
   background: #C4BBFC;
@@ -476,37 +416,34 @@ main section#home .right {
   align-items: center;
   justify-content: flex-end;
   overflow-x: hidden;
+  position: relative;
+  z-index: 9;
 }
-
 @media only screen and (max-width: 820px) {
   main section#home .right {
     width: 50%;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .right {
     width: 100%;
     height: 50vh;
   }
 }
-
 main section#home .right img.hero {
-  width: 11cm;
+  width: 90%;
+  height: auto;
 }
-
 @media only screen and (max-width: 755px) {
   main section#home .right img.hero {
     width: 95%;
   }
 }
-
 @media only screen and (max-width: 556px) {
   main section#home .right img.hero {
     width: 70%;
   }
 }
-
 main section#about {
   display: flex;
   flex-direction: row;
@@ -514,7 +451,6 @@ main section#about {
   justify-content: space-between;
   align-items: center;
 }
-
 @media only screen and (max-width: 820px) {
   main section#about {
     display: flex;
@@ -523,12 +459,10 @@ main section#about {
     align-items: center;
   }
 }
-
 main section#about .left {
   width: 50%;
   padding-left: 3cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#about .left {
     width: 100%;
@@ -539,27 +473,22 @@ main section#about .left {
     padding: 0;
   }
 }
-
 main section#about .left img.ilustrator {
   width: 10cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#about .left img.ilustrator {
     width: 15cm;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#about .left img.ilustrator {
     width: 95%;
   }
 }
-
 main section#about .right {
   width: 50%;
 }
-
 @media only screen and (max-width: 820px) {
   main section#about .right {
     width: 100%;
@@ -567,117 +496,98 @@ main section#about .right {
     margin-top: 1cm;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#about .right {
-    padding-left: .5cm;
+    padding-left: 0.5cm;
   }
 }
-
 main section#about .right h1.title {
   color: #7C44F3;
   font-family: plusjakartasansreguler;
   font-size: 20px;
 }
-
 main section#about .right h2.subtitle {
   font-size: 30px;
-  margin-top: .2cm;
+  margin-top: 0.2cm;
 }
-
 @media only screen and (max-width: 512px) {
   main section#about .right h2.subtitle {
     font-size: 25px;
   }
 }
-
 main section#about .right p.desc {
-  margin-top: .2cm;
+  margin-top: 0.2cm;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   width: 80%;
 }
-
 @media only screen and (max-width: 820px) {
   main section#about .right p.desc {
     font-size: 16px;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#about .right p.desc {
     width: 95%;
     font-size: 14px;
   }
 }
-
 main section#skill {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-
 main section#skill h1.title {
   color: #7C44F3;
   font-family: plusjakartasansreguler;
   font-size: 20px;
 }
-
 main section#skill h2.subtitle {
   font-size: 30px;
-  margin-top: .2cm;
+  margin-top: 0.2cm;
 }
-
 @media only screen and (max-width: 512px) {
   main section#skill h2.subtitle {
     font-size: 25px;
   }
 }
-
 main section#skill img {
   width: auto;
   height: 8cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#skill img {
     height: 6cm;
   }
 }
-
 @media only screen and (max-width: 617px) {
   main section#skill img {
     width: 95%;
     height: auto;
   }
 }
-
 main section#project {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-
 main section#project h1.title {
   color: #7C44F3;
   font-family: plusjakartasansreguler;
   font-size: 20px;
 }
-
 main section#project h2.subtitle {
   font-size: 30px;
-  margin-top: .2cm;
+  margin-top: 0.2cm;
 }
-
 @media only screen and (max-width: 512px) {
   main section#project h2.subtitle {
     font-size: 25px;
   }
 }
-
 main section#project .category {
   width: 30%;
   display: flex;
@@ -687,72 +597,60 @@ main section#project .category {
   align-items: center;
   margin-top: 1cm;
 }
-
 @media only screen and (max-width: 820px) {
   main section#project .category {
     width: 40%;
   }
 }
-
 @media only screen and (max-width: 617px) {
   main section#project .category {
     width: 60%;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#project .category {
     width: 70%;
   }
 }
-
 main section#project .category a {
   width: 50%;
-  padding: .2cm;
+  padding: 0.2cm;
   background-color: #D9D9D9;
   color: white;
   color: black;
   font-family: plusjakartasansbold;
   text-align: center;
 }
-
 @media only screen and (max-width: 512px) {
   main section#project .category a {
     font-size: 14px;
   }
 }
-
 main section#project .category a.close {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-
 main section#project .category a.open {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
 main section#project .category a.active {
   color: white !important;
   background-color: #7C44F3 !important;
 }
-
 main section#project .projects {
   width: 70%;
 }
-
 @media only screen and (max-width: 820px) {
   main section#project .projects {
     width: 95%;
   }
 }
-
 @media only screen and (max-width: 722px) {
   main section#project .projects {
     width: 100%;
   }
 }
-
 main section#project .projects .open-source, main section#project .projects .close-source {
   width: 100%;
   display: flex;
@@ -761,7 +659,6 @@ main section#project .projects .open-source, main section#project .projects .clo
   justify-content: space-between;
   align-items: center;
 }
-
 @media only screen and (max-width: 820px) {
   main section#project .projects .open-source, main section#project .projects .close-source {
     display: flex;
@@ -771,76 +668,63 @@ main section#project .projects .open-source, main section#project .projects .clo
     align-items: center;
   }
 }
-
 main section#project .projects .open-source .card, main section#project .projects .close-source .card {
   width: 45%;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: .5cm;
+  margin-top: 0.5cm;
   height: 12cm;
 }
-
 @media only screen and (max-width: 722px) {
   main section#project .projects .open-source .card, main section#project .projects .close-source .card {
     width: 48%;
   }
 }
-
 @media only screen and (max-width: 685px) {
   main section#project .projects .open-source .card, main section#project .projects .close-source .card {
     width: 70%;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#project .projects .open-source .card, main section#project .projects .close-source .card {
     width: 90%;
   }
 }
-
 main section#project .projects .open-source .card img, main section#project .projects .close-source .card img {
   width: 100%;
   border-radius: inherit;
 }
-
 main section#project .projects .open-source .card .text, main section#project .projects .close-source .card .text {
-  padding: .5cm;
+  padding: 0.5cm;
 }
-
 main section#project .projects .open-source .card .text h1.title, main section#project .projects .close-source .card .text h1.title {
   color: black;
   font-size: 18px;
 }
-
 main section#project .projects .open-source .card .text p.desc, main section#project .projects .close-source .card .text p.desc {
   color: black;
   font-size: 14px;
-  margin-top: .1cm;
+  margin-top: 0.1cm;
 }
-
 main section#project .projects .open-source .card .text .tags, main section#project .projects .close-source .card .text .tags {
-  margin-top: .5cm;
+  margin-top: 0.5cm;
 }
-
 main section#project .projects .open-source .card .text .tags a, main section#project .projects .close-source .card .text .tags a {
   background-color: #A598F2;
   color: black;
-  padding: .1cm;
+  padding: 0.1cm;
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 @media only screen and (max-width: 820px) {
   main section#project .projects .open-source .card .text .tags a, main section#project .projects .close-source .card .text .tags a {
     font-size: 12px;
   }
 }
-
 main section#project .projects .none {
   display: none !important;
 }
-
 main section#contact {
   display: flex;
   flex-direction: row;
@@ -848,7 +732,6 @@ main section#contact {
   justify-content: space-between;
   align-items: center;
 }
-
 @media only screen and (max-width: 685px) {
   main section#contact {
     display: flex;
@@ -858,57 +741,47 @@ main section#contact {
     flex-direction: column-reverse;
   }
 }
-
 main section#contact .left {
   padding: 1cm;
   width: 50%;
   height: 15cm;
 }
-
 @media only screen and (max-width: 685px) {
   main section#contact .left {
     width: 70%;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#contact .left {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#contact .left {
-    padding: .2cm;
+    padding: 0.2cm;
   }
 }
-
 main section#contact .left .medsos {
   margin-top: 1cm;
 }
-
 main section#contact .left .medsos a {
-  margin-left: .2cm;
+  margin-left: 0.2cm;
 }
-
 @media only screen and (max-width: 722px) {
   main section#contact .left .medsos a {
-    margin-left: .1cm;
+    margin-left: 0.1cm;
   }
 }
-
 @media only screen and (max-width: 685px) {
   main section#contact .left .medsos a {
-    margin-left: .2cm;
+    margin-left: 0.2cm;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#contact .left .medsos a {
-    margin-left: .1cm;
+    margin-left: 0.1cm;
   }
 }
-
 main section#contact .left iframe {
   margin-top: 1cm;
   border-radius: 10px;
@@ -916,44 +789,37 @@ main section#contact .left iframe {
   width: 100%;
   height: 300px;
 }
-
 main section#contact .left a.view-maps {
-  padding: .2cm .5cm;
+  padding: 0.2cm 0.5cm;
   border: 2px solid #7C44F3;
   border-radius: 5px;
   font-family: plusjakartasansbold;
 }
-
 @media only screen and (max-width: 820px) {
   main section#contact .left a.view-maps {
     font-size: 14px;
   }
 }
-
 main section#contact .right {
   width: 50%;
   height: 15cm;
   padding: 1cm;
 }
-
 @media only screen and (max-width: 685px) {
   main section#contact .right {
     width: 70%;
   }
 }
-
 @media only screen and (max-width: 512px) {
   main section#contact .right {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 354px) {
   main section#contact .right {
-    padding: .2cm;
+    padding: 0.2cm;
   }
 }
-
 main section#contact .right form {
   margin-top: 1cm;
   display: flex;
@@ -962,49 +828,43 @@ main section#contact .right form {
   align-items: center;
   width: 100%;
 }
-
 main section#contact .right form input {
   width: 100%;
   height: 1.2cm;
-  margin-top: .7cm;
+  margin-top: 0.7cm;
   background: transparent;
   border: 2px solid #7C44F3;
   color: white;
-  padding: .5cm;
+  padding: 0.5cm;
   outline: none;
   border-radius: 5px;
   font-family: plusjakartasansreguler;
 }
-
 main section#contact .right form textarea {
   width: 100%;
   height: 3cm;
   background: transparent;
   border: 2px solid #7C44F3;
   color: white;
-  margin-top: .7cm;
+  margin-top: 0.7cm;
   outline: none;
-  padding: .5cm;
+  padding: 0.5cm;
   border-radius: 5px;
   font-family: plusjakartasansreguler;
 }
-
 main section#contact .right form button {
   align-self: flex-start;
-  padding: .3cm .8cm;
+  padding: 0.3cm 0.8cm;
   background: transparent;
   border: 2px solid #7C44F3;
   border-radius: 5px;
   color: white;
   font-family: plusjakartasansbold;
-  margin-top: .7cm;
+  margin-top: 0.7cm;
 }
-
 main section#cp {
   padding-bottom: 1cm;
 }
-
 main section#cp p {
   text-align: center;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+{
+    "theme_color": "#f69435",
+    "background_color": "#f69435",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Muhamad Irga Khoirul Mahfis",
+    "short_name": "Irga",
+    "description": "Muhamad Irga Khoirul Mahfis | Web Developer",
+    "icons": {
+        "name": "meta.webp"
+    }
+}
