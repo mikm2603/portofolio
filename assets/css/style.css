@@ -397,7 +397,7 @@ main section#home .left p.report {
 }
 @media only screen and (max-width: 354px) {
   main section#home .left p.report {
-    padding: 0.2cm;
+    padding: 0.1cm;
     font-size: 12px;
   }
 }
