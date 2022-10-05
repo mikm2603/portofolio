@@ -198,7 +198,7 @@ main section#home .left .wrapper {
 }
 @media only screen and (max-width: 512px) {
   main section#home .left .wrapper {
-    margin-top: 1.5cm;
+    margin-top: 0.5cm;
   }
 }
 @media only screen and (max-width: 354px) {
@@ -390,14 +390,14 @@ main section#home .left p.report {
 }
 @media only screen and (max-width: 512px) {
   main section#home .left p.report {
-    padding: 0.5cm;
+    padding: 0.2cm;
     padding-left: 0.5cm;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 354px) {
   main section#home .left p.report {
-    padding: 0.1cm;
+    padding: 0.2cm;
     font-size: 12px;
   }
 }
