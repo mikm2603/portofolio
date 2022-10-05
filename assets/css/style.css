@@ -786,6 +786,8 @@ main section#contact .left .medsos a {
   main section#contact .left .medsos a {
     margin-left: 0.1cm;
   }
+}
+@media only screen and (max-width: 512px) {
   main section#contact .left .medsos a img.iconsosmed {
     width: 0.8cm;
   }

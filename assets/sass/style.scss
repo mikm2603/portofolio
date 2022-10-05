@@ -585,9 +585,11 @@ main{
                     }
                     @media only screen and (max-width: 354px) {
                         margin-left: .1cm;    
-                        img.iconsosmed{
+                    }
+                    img.iconsosmed{
+                        @media only screen and (max-width: 512px) {
                             width: .8cm;
-                        }  
+                        }
                     }
                 }
             }
