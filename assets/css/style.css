@@ -65,6 +65,11 @@ nav {
 nav h1.title {
   font-size: 25px;
 }
+@media only screen and (max-width: 512px) {
+  nav {
+    padding: 0.2cm 0.5cm;
+  }
+}
 nav .link {
   width: 40%;
   display: flex;
@@ -780,6 +785,9 @@ main section#contact .left .medsos a {
 @media only screen and (max-width: 354px) {
   main section#contact .left .medsos a {
     margin-left: 0.1cm;
+  }
+  main section#contact .left .medsos a img.iconsosmed {
+    width: 0.8cm;
   }
 }
 main section#contact .left iframe {

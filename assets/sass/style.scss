@@ -81,6 +81,10 @@ nav{
     h1.title{
         font-size: 25px;
     }
+
+    @media only screen and (max-width: 512px) {
+        padding: .2cm .5cm;
+    }
     .link{
         width: 40%;
         @include flexrowbetween();
@@ -580,7 +584,10 @@ main{
                         margin-left: .2cm;                    
                     }
                     @media only screen and (max-width: 354px) {
-                        margin-left: .1cm;                    
+                        margin-left: .1cm;    
+                        img.iconsosmed{
+                            width: .8cm;
+                        }  
                     }
                 }
             }
